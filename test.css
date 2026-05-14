@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Prevents padding from breaking layout */
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #dfd5ff 0%, #c8b6ff 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+.textBox {
+    display: flex;
+    flex-direction: column; /* Stacks textarea and button */
+    gap: 15px;
+}
+
+#input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #eee;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    resize: none; /* Keeps the look clean */
+}
+
+#input:focus {
+    border-color: #6c5ce7;
+}
+
+.button {
+    padding: 12px;
+    border: none;
+    background-color: #6c5ce7; /* Modern purple instead of plain green */
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    background-color: #5849c4;
+    transform: translateY(-2px);
+}
+
+.button:active {
+    transform: translateY(0);
+}
+
+.countingWord {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.countingWord p {
+    background: #f8f9fa;
+    padding: 12px 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between; /* Pushes number to the right */
+    color: #444;
+    font-weight: 500;
+}
+
+span {
+    color: #6c5ce7;
+    font-weight: 800;
+}
+
+
